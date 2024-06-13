@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
-export class NavigationComponent {}
+export class NavigationComponent {
+  public readonly navLinks = ['About', 'Services', 'Technologies', 'How To'];
+}
