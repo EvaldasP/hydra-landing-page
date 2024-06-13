@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "custom-gradient-nav-btn":
+          "linear-gradient(to right, #8176AF 0%, #9E94C9 46%, #C0B7E8 100%)",
+      },
+    },
   },
   plugins: [],
 };
