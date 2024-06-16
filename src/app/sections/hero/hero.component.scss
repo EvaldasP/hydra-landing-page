@@ -1,0 +1,13 @@
+@mixin text-gradient($direction, $color1, $color2) {
+  background: linear-gradient($direction, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-text-gradient-1 {
+  @include text-gradient(to right, #c0b7e8, #8176af);
+}
+
+.custom-text-gradient-2 {
+  @include text-gradient(to left, #c0b7e8, #8176af);
+}
