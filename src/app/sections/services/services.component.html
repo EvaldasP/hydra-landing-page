@@ -24,5 +24,10 @@
     </div>
   </div>
 
-  <app-service-card></app-service-card>
+  <div class="flex justify-around flex-wrap">
+    @for (service of availableServices; track service.name ) {
+    <app-service-card [service]="service"></app-service-card>
+
+    }
+  </div>
 </div>
