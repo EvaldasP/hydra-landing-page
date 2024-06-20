@@ -4,6 +4,7 @@ import { HeroComponent } from './sections/hero/hero.component';
 import { IntroductionComponent } from './sections/introduction/introduction.component';
 import { ServicesComponent } from './sections/services/services.component';
 import { TechComponent } from './sections/tech/tech.component';
+import { ProcessComponent } from './sections/process/process.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { TechComponent } from './sections/tech/tech.component';
     IntroductionComponent,
     ServicesComponent,
     TechComponent,
+    ProcessComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
