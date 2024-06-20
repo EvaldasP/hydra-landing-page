@@ -6,6 +6,7 @@ import { ServicesComponent } from './sections/services/services.component';
 import { TechComponent } from './sections/tech/tech.component';
 import { ProcessComponent } from './sections/process/process.component';
 import { FormComponent } from './sections/form/form.component';
+import { FooterComponent } from './sections/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { FormComponent } from './sections/form/form.component';
     TechComponent,
     ProcessComponent,
     FormComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

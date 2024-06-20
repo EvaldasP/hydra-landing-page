@@ -1,0 +1,41 @@
+<div>
+  <div class="flex flex-row items-stretch pb-20">
+    <div class="basis-1/4 flex items-center justify-center">
+      <img src="hydraLogo.png" alt="hydra" />
+    </div>
+    <div class="basis-1/4 text-slate-50 flex font-bold uppercase">
+      <div class="w-[4px] bg-vertical-line"></div>
+      <div class="flex flex-col pl-16 pr-6">
+        @for (link of links; track link) {
+        <a href="" class="mb-2">{{ link }}</a>
+        }
+      </div>
+    </div>
+    <div class="basis-1/4 text-slate-50 flex font-bold uppercase">
+      <div class="w-[4px] bg-vertical-line"></div>
+      <div class="flex flex-col pr-16 pl-28">
+        @for (doc of docs; track doc) {
+        <a href="" class="mb-2">{{ doc }}</a>
+        }
+      </div>
+      <div class="w-[4px] bg-vertical-line"></div>
+    </div>
+    <div class="basis-1/4 flex flex-col justify-between pl-6">
+      <span class="mb-8 text-slate-50 font-bold uppercase"
+        >Socialize with hydra</span
+      >
+      <div class="flex justify-between">
+        @for (icon of icons; track icon) {
+        <a href="">
+          <img [src]="icon.icon" alt="" />
+        </a>
+        }
+      </div>
+      <button
+        class="rounded-3xl px-10 w-max py-3 text-gray-700 font-bold uppercase text-xs bg-custom-gradient-nav-btn mt-9"
+      >
+        Build your world
+      </button>
+    </div>
+  </div>
+</div>
