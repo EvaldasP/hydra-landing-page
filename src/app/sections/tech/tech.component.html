@@ -12,4 +12,12 @@
       </button>
     </div>
   </div>
+
+  <div class="flex items-center justify-between flex flex-wrap">
+    @for (company of componies; track company) {
+
+    <img [src]="company" [alt]="company" />
+
+    }
+  </div>
 </div>
