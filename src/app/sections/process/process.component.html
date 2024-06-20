@@ -24,12 +24,12 @@
     </div>
   </div>
 
-  <div>labas</div>
-  <div>labas</div>
-
-  <div>labas</div>
-
-  <div>labas</div>
-
-  <div>labas</div>
+  <div class="flex justify-between">
+    @for (process of processes; track process;let index = $index) {
+    <app-process-card
+      [title]="process"
+      [cardNumber]="index + 1"
+    ></app-process-card>
+    }
+  </div>
 </div>
