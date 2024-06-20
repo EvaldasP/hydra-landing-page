@@ -5,6 +5,7 @@ import { IntroductionComponent } from './sections/introduction/introduction.comp
 import { ServicesComponent } from './sections/services/services.component';
 import { TechComponent } from './sections/tech/tech.component';
 import { ProcessComponent } from './sections/process/process.component';
+import { FormComponent } from './sections/form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { ProcessComponent } from './sections/process/process.component';
     ServicesComponent,
     TechComponent,
     ProcessComponent,
+    FormComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
