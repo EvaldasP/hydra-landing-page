@@ -1,10 +1,12 @@
 <div>
-  <div class="flex flex-row items-stretch mb-10 justify-between">
-    <div class="flex basis-2/12 items-center justify-start">
+  <div
+    class="flex flex-row max-lg:flex-col items-stretch mb-10 justify-between max-lg:items-center"
+  >
+    <div class="flex basis-2/12 items-center justify-start max-lg:mb-5">
       <img src="hydraLogo.png" alt="hydra" />
     </div>
 
-    <div class="flex basis-6/12 justify-center">
+    <div class="max-lg:hidden flex basis-6/12 justify-center">
       <div class="text-slate-50 flex font-bold uppercase">
         <div class="w-[4px] bg-vertical-line"></div>
         <div class="flex flex-col px-16">
@@ -26,13 +28,15 @@
       </div>
     </div>
 
-    <div class="basis-4/12 flex flex-col pl-6 justify-end">
+    <div
+      class="basis-4/12 flex flex-col justify-end pl-6 max-lg:pl-0 max-lg:items-center"
+    >
       <span class="mb-8 text-slate-50 font-bold uppercase"
         >Socialize with hydra</span
       >
       <div class="flex justify-between">
         @for (icon of icons; track icon) {
-        <a href="">
+        <a class="px-2" href="">
           <img [src]="icon.icon" alt="" />
         </a>
         }
@@ -47,9 +51,7 @@
 
   <div class="h-[1px] bg-underline-footer"></div>
 
-  <div
-    class="flex flex-col items-center justify-center pt-8 font-bold text-slate-50"
-  >
+  <div class="text-center flex flex-col pt-8 font-bold text-slate-50">
     <span class="mb-5">
       2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED
     </span>
