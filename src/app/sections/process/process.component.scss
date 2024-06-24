@@ -1,0 +1,16 @@
+swiper-container {
+  height: 100%;
+  width: 80%;
+}
+
+swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::ng-deep .swiper-button-prev,
+::ng-deep .swiper-button-next {
+  color: red !important;
+  background-color: green !important;
+}

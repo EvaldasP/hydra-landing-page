@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeroComponent } from './sections/hero/hero.component';
 import { IntroductionComponent } from './sections/introduction/introduction.component';
@@ -23,6 +23,7 @@ import { FooterComponent } from './sections/footer/footer.component';
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppComponent {
   title = 'hydra-landing-page';

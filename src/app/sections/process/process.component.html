@@ -1,19 +1,21 @@
 <div>
-  <div class="flex text-slate-50 mb-32">
-    <div class="basis-3/6">
-      <div class="text-4xl uppercase">
-        <h3 class="font-bold">How We Build</h3>
+  <div
+    class="flex text-slate-50 mb-32 max-lg:mb-10 max-lg:justify-center max-lg:text-center"
+  >
+    <div class="lg:basis-3/6">
+      <div class="text-4xl max-lg:text-2xl uppercase">
+        <h3 class="font-bold max-lg:mb-5">How We Build</h3>
         <div class="flex items-center">
-          <h3 class="mr-5">With Hydra VR?</h3>
+          <h3 class="font-light lg:mr-5">With Hydra VR?</h3>
           <img
-            class="h-[60px]"
+            class="max-lg:hidden h-[60px]"
             src="introduction-arrow.svg"
             alt="introduction-arrow"
           />
         </div>
       </div>
     </div>
-    <div class="basis-3/6">
+    <div class="max-lg:hidden basis-3/6">
       <p>
         Vitae sapien pellentesque habitant morbi tristique senectus et netus et.
         Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet
@@ -24,12 +26,54 @@
     </div>
   </div>
 
-  <div class="flex justify-between">
+  <div class="flex justify-between max-lg:hidden">
     @for (process of processes; track process;let index = $index) {
     <app-process-card
       [title]="process"
       [cardNumber]="index + 1"
     ></app-process-card>
     }
+  </div>
+</div>
+
+<div class="lg:hidden flex flex-row items-end justify-center">
+  <div
+    class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
+  >
+    <button
+      class="flex items-center justify-center rounded-full rotate-90 bg-custom-linear h-[60px] w-[60px]"
+      (click)="slidePrev()"
+    >
+      <img src="chevron.png" alt="" />
+    </button>
+  </div>
+
+  <swiper-container
+    #swiperContainer
+    slides-per-view="1"
+    loop="true"
+    speed="500"
+    autoplay-delay="5000"
+  >
+    @for (process of processes; track process;let index = $index) {
+    <swiper-slide>
+      <app-process-card
+        [title]="process"
+        [cardNumber]="index + 1"
+      ></app-process-card
+    ></swiper-slide>
+
+    }
+  </swiper-container>
+
+  <div
+    class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
+  >
+    <button
+      class="flex items-center justify-center rounded-full -rotate-90 bg-custom-linear h-[60px] w-[60px]"
+      (click)="slideNext()"
+    >
+      <img src="chevron.png" alt="" />
+    </button>
   </div>
 </div>
