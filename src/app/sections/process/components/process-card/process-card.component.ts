@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-process-card',
@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './process-card.component.scss',
 })
 export class ProcessCardComponent {
-  @Input() title!: string;
-  @Input() cardNumber!: number;
+  title = input.required<string>();
+  cardNumber = input.required<number>();
 }
