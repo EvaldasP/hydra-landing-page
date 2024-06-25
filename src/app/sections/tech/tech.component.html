@@ -15,12 +15,12 @@
     </div>
   </div>
   <div class="max-lg:hidden flex items-center justify-between flex-wrap">
-    @for (company of componies; track company) {
+    @for (company of companies; track company) {
     <img [src]="company" [alt]="company" />
     }
   </div>
-  <app-swiper-container>
-    @for (company of componies; track company) {
+  <app-swiper-container [isCenteredNav]="true">
+    @for (company of companies; track company) {
     <swiper-slide>
       <div class="flex items-center justify-between flex-wrap">
         <img [src]="company" [alt]="company" class="h-[150px]" />

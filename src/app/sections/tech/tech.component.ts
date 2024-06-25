@@ -18,7 +18,7 @@ import { SwiperContainerComponent } from '../../shared/components/swiper-contain
 export class TechComponent {
   @ViewChild('swiperContainer') swiperContainer!: ElementRef;
 
-  public readonly componies = [
+  public readonly companies = [
     'tech/unreal.png',
     'tech/unity.png',
     'tech/oculus.png',

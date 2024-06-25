@@ -8,6 +8,6 @@ import { Component, Input, input } from '@angular/core';
   styleUrl: './process-card.component.scss',
 })
 export class ProcessCardComponent {
-  title = input.required<string>();
-  cardNumber = input.required<number>();
+  public title = input.required<string>();
+  public cardNumber = input.required<number>();
 }

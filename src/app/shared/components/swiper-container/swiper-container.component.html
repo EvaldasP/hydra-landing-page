@@ -1,4 +1,7 @@
-<div class="lg:hidden flex flex-row items-end justify-center">
+<div
+  class="lg:hidden flex flex-row justify-center"
+  [ngClass]="isCenteredNav() ? 'items-center' : 'items-end'"
+>
   <div
     class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
   >
