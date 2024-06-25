@@ -8,7 +8,6 @@ import {
 import { ProcessCardComponent } from './components/process-card/process-card.component';
 import { CommonModule } from '@angular/common';
 import Swiper from 'swiper';
-import { SwiperContainer } from 'swiper/element';
 
 @Component({
   selector: 'app-process',
@@ -20,7 +19,6 @@ import { SwiperContainer } from 'swiper/element';
 })
 export class ProcessComponent {
   @ViewChild('swiperContainer') swiperContainer!: ElementRef;
-  @ViewChild('labas') labas!: HTMLElement;
 
   public readonly processes = [
     '3D Conception & Design',

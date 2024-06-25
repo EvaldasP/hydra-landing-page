@@ -5,3 +5,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+swiper-container {
+  height: 100%;
+  width: 80%;
+}
+
+swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
