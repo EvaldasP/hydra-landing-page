@@ -16,24 +16,10 @@ import { SwiperContainerComponent } from '../../shared/components/swiper-contain
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class TechComponent {
-  @ViewChild('swiperContainer') swiperContainer!: ElementRef;
-
   public readonly companies = [
     'tech/unreal.png',
     'tech/unity.png',
     'tech/oculus.png',
     'tech/vive.png',
   ];
-
-  public slideNext() {
-    const swiper = this.swiperContainer?.nativeElement?.swiper as Swiper;
-
-    swiper?.slideNext();
-  }
-
-  public slidePrev() {
-    const swiper = this.swiperContainer?.nativeElement?.swiper as Swiper;
-
-    swiper?.slidePrev();
-  }
 }

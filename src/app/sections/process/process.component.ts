@@ -19,24 +19,10 @@ import { SwiperContainerComponent } from '../../shared/components/swiper-contain
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ProcessComponent {
-  @ViewChild('swiperContainer') swiperContainer!: ElementRef;
-
   public readonly processes = [
     '3D Conception & Design',
     'Interaction Design',
     'VR World User Testing',
     'Hydra VR Deploy',
   ];
-
-  public slideNext() {
-    const swiper = this.swiperContainer?.nativeElement?.swiper as Swiper;
-
-    swiper?.slideNext();
-  }
-
-  public slidePrev() {
-    const swiper = this.swiperContainer?.nativeElement?.swiper as Swiper;
-
-    swiper?.slidePrev();
-  }
 }
