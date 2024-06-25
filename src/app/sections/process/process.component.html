@@ -35,45 +35,14 @@
     }
   </div>
 
-  <div class="lg:hidden flex flex-row items-end justify-center">
-    <div
-      class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
-    >
-      <button
-        class="flex items-center justify-center rounded-full rotate-90 bg-custom-linear h-[60px] w-[60px]"
-        (click)="slidePrev()"
-      >
-        <img src="chevron.png" alt="" />
-      </button>
-    </div>
-
-    <swiper-container
-      #swiperContainer
-      slides-per-view="1"
-      loop="true"
-      speed="500"
-      autoplay-delay="5000"
-    >
-      @for (process of processes; track process;let index = $index) {
-      <swiper-slide>
-        <app-process-card
-          [title]="process"
-          [cardNumber]="index + 1"
-        ></app-process-card
-      ></swiper-slide>
-
-      }
-    </swiper-container>
-
-    <div
-      class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
-    >
-      <button
-        class="flex items-center justify-center rounded-full -rotate-90 bg-custom-linear h-[60px] w-[60px]"
-        (click)="slideNext()"
-      >
-        <img src="chevron.png" alt="" />
-      </button>
-    </div>
-  </div>
+  <app-swiper-container>
+    @for (process of processes; track process;let index = $index) {
+    <swiper-slide>
+      <app-process-card
+        [title]="process"
+        [cardNumber]="index + 1"
+      ></app-process-card
+    ></swiper-slide>
+    }
+  </app-swiper-container>
 </div>

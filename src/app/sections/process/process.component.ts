@@ -8,11 +8,12 @@ import {
 import { ProcessCardComponent } from './components/process-card/process-card.component';
 import { CommonModule } from '@angular/common';
 import Swiper from 'swiper';
+import { SwiperContainerComponent } from '../../shared/components/swiper-container/swiper-container.component';
 
 @Component({
   selector: 'app-process',
   standalone: true,
-  imports: [ProcessCardComponent, CommonModule],
+  imports: [ProcessCardComponent, CommonModule, SwiperContainerComponent],
   templateUrl: './process.component.html',
   styleUrl: './process.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

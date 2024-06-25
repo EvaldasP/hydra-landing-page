@@ -1,5 +1,7 @@
 <div>
-  <div class="tech-main text-center text-3xl text-slate-50 rounded-full py-20">
+  <div
+    class="tech-main text-center text-3xl text-slate-50 rounded-full py-20 max-lg:mb-16"
+  >
     <h3 class="font-bold">TECHNOLOGIES & HARDWARE</h3>
     <h3>USED BY HYDRA VR.</h3>
   </div>
@@ -12,50 +14,18 @@
       </button>
     </div>
   </div>
-
   <div class="max-lg:hidden flex items-center justify-between flex-wrap">
     @for (company of componies; track company) {
     <img [src]="company" [alt]="company" />
     }
   </div>
-
-  <div class="lg:hidden flex flex-row items-center justify-center">
-    <div
-      class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
-    >
-      <button
-        class="flex items-center justify-center rounded-full rotate-90 bg-custom-linear h-[60px] w-[60px]"
-        (click)="slidePrev()"
-      >
-        <img src="chevron.png" alt="" />
-      </button>
-    </div>
-
-    <swiper-container
-      #swiperContainer
-      slides-per-view="1"
-      loop="true"
-      speed="500"
-      autoplay-delay="5000"
-    >
-      @for (company of componies; track company) {
-      <swiper-slide>
-        <div class="flex items-center justify-between flex-wrap">
-          <img [src]="company" [alt]="company" class="h-[150px]" />
-        </div>
-      </swiper-slide>
-      }
-    </swiper-container>
-
-    <div
-      class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
-    >
-      <button
-        class="flex items-center justify-center rounded-full -rotate-90 bg-custom-linear h-[60px] w-[60px]"
-        (click)="slideNext()"
-      >
-        <img src="chevron.png" alt="" />
-      </button>
-    </div>
-  </div>
+  <app-swiper-container>
+    @for (company of componies; track company) {
+    <swiper-slide>
+      <div class="flex items-center justify-between flex-wrap">
+        <img [src]="company" [alt]="company" class="h-[150px]" />
+      </div>
+    </swiper-slide>
+    }
+  </app-swiper-container>
 </div>

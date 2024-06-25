@@ -5,11 +5,12 @@ import {
   ViewChild,
 } from '@angular/core';
 import Swiper from 'swiper';
+import { SwiperContainerComponent } from '../../shared/components/swiper-container/swiper-container.component';
 
 @Component({
   selector: 'app-tech',
   standalone: true,
-  imports: [],
+  imports: [SwiperContainerComponent],
   templateUrl: './tech.component.html',
   styleUrl: './tech.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
