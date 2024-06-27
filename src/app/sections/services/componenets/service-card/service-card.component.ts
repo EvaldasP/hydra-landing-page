@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { ServiceView } from '../../service.interface';
 
 @Component({
@@ -9,5 +9,5 @@ import { ServiceView } from '../../service.interface';
   styleUrl: './service-card.component.scss',
 })
 export class ServiceCardComponent {
-  @Input() service!: ServiceView;
+  public service = input.required<ServiceView>();
 }
