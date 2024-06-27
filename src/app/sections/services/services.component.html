@@ -1,17 +1,10 @@
 <div>
   <div class="flex text-slate-50 lg:mb-20 max-lg:mb-6 max-lg:justify-center">
     <div class="lg:basis-3/6">
-      <div class="text-4xl uppercase max-lg:text-center">
-        <h3 class="font-bold">Why Build</h3>
-        <div class="flex items-center">
-          <h3 class="lg:mr-5 max-lg:mt-5">With Hydra?</h3>
-          <img
-            class="max-lg:hidden h-[60px]"
-            src="introduction-arrow.svg"
-            alt="introduction-arrow"
-          />
-        </div>
-      </div>
+      <app-section-header
+        [mainText]="'Why Build'"
+        [secondaryText]="'With Hydra?'"
+      ></app-section-header>
     </div>
     <div class="max-lg:hidden basis-3/6">
       <p>

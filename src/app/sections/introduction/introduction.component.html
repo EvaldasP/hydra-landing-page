@@ -1,20 +1,13 @@
 <div>
-  <div class="flex text-slate-50 mb-20">
-    <div class="basis-1/2">
-      <div class="text-4xl uppercase">
-        <h3 class="font-bold">Introduction</h3>
-        <div class="flex items-center">
-          <h3 class="mr-5">To Hydra VR</h3>
-          <img
-            class="h-[60px]"
-            src="introduction-arrow.svg"
-            alt="introduction-arrow"
-          />
-        </div>
-      </div>
+  <div class="flex text-slate-50 mb-20 max-lg:mb-10 max-lg:justify-center">
+    <div class="lg:basis-1/2">
+      <app-section-header
+        [mainText]="'Introduction'"
+        [secondaryText]="'To Hydra VR'"
+      ></app-section-header>
     </div>
 
-    <div class="basis-1/2">
+    <div class="max-lg:hidden basis-1/2">
       <p>
         Vitae sapien pellentesque habitant morbi tristique senectus et netus et.
         Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet
@@ -25,18 +18,22 @@
     </div>
   </div>
 
-  <div class="flex text-slate-50">
+  <div class="flex max-lg:flex-col max-lg:items-center text-slate-50">
     <div class="basis-1/2">
-      <img class="pr-10" src="introduction-main.png" alt="introduction-main" />
+      <img
+        class="lg:pr-10"
+        src="introduction-main.png"
+        alt="introduction-main"
+      />
     </div>
 
-    <div class="basis-1/2 mt-20">
-      <div class="text-4xl mb-10 uppercase">
+    <div class="basis-1/2 mt-20 max-lg:mt-12">
+      <div class="max-lg:hidden text-4xl mb-10 uppercase">
         <h3 class="font-bold">About</h3>
         <h3 class="mr-5">Hydra VR</h3>
       </div>
 
-      <p class="mb-6">
+      <p class="max-lg:text-sm mb-6">
         Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis
         rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum.
         Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at
@@ -48,11 +45,13 @@
         nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
       </p>
 
-      <button
-        class="rounded-3xl px-8 py-4 text-gray-700 font-bold uppercase text-xs bg-custom-linear mr-10"
-      >
-        LET’S GET IN TOUCH
-      </button>
+      <div class="max-lg:text-center">
+        <button
+          class="rounded-3xl px-8 py-4 text-gray-700 font-bold uppercase text-xs bg-custom-linear lg:mr-10"
+        >
+          LET’S GET IN TOUCH
+        </button>
+      </div>
     </div>
   </div>
 </div>
