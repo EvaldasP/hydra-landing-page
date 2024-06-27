@@ -1,19 +1,19 @@
 <div>
-  <div class="flex text-slate-50 mb-20">
-    <div class="basis-3/6">
-      <div class="text-4xl uppercase">
+  <div class="flex text-slate-50 lg:mb-20 max-lg:mb-6 max-lg:justify-center">
+    <div class="lg:basis-3/6">
+      <div class="text-4xl uppercase max-lg:text-center">
         <h3 class="font-bold">Why Build</h3>
         <div class="flex items-center">
-          <h3 class="mr-5">With Hydra?</h3>
+          <h3 class="lg:mr-5 max-lg:mt-5">With Hydra?</h3>
           <img
-            class="h-[60px]"
+            class="max-lg:hidden h-[60px]"
             src="introduction-arrow.svg"
             alt="introduction-arrow"
           />
         </div>
       </div>
     </div>
-    <div class="basis-3/6">
+    <div class="max-lg:hidden basis-3/6">
       <p>
         Vitae sapien pellentesque habitant morbi tristique senectus et netus et.
         Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet
@@ -24,10 +24,17 @@
     </div>
   </div>
 
-  <div class="flex justify-around flex-wrap">
+  <div class="max-lg:hidden flex justify-around flex-wrap">
     @for (service of availableServices; track service.name ) {
     <app-service-card [service]="service"></app-service-card>
-
     }
   </div>
+
+  <app-swiper-container [isCenteredNav]="true">
+    @for (service of availableServices; track service.name ) {
+    <swiper-slide class="flex items-center justify-center">
+      <app-service-card [service]="service"></app-service-card>
+    </swiper-slide>
+    }
+  </app-swiper-container>
 </div>
