@@ -1,33 +1,39 @@
 <div class="hero">
   <app-navigation></app-navigation>
-  <div class="flex justify-between items-center mt-36 mb-20">
-    <div>
+  <div
+    class="flex max-lg:flex-col justify-between items-center mt-36 max-lg:mt-14 mb-20"
+  >
+    <div class="max-lg:order-last">
       <div class="text-slate-50 mb-10">
-        <div class="leading-snug text-5xl font-bold mb-6">
+        <div class="leading-snug text-4xl font-bold mb-6 text-center">
           <h1>
-            <span class="custom-text-gradient-1">Dive</span> Into The Depths
+            <span class="custom-text-gradient-1 text-5xl">Dive</span> Into The
+            Depths
           </h1>
           <h2>
-            Of <span class="custom-text-gradient-2">Virtual Reality</span>
+            Of
+            <span class="custom-text-gradient-2 text-5xl">Virtual Reality</span>
           </h2>
         </div>
-        <p class="max-w-[30rem] [word-spacing: 2px] leading-relaxed">
+        <p
+          class="max-lg:hidden max-w-[30rem] [word-spacing: 2px] leading-relaxed"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
           Lectus mauris eros in vitae .
         </p>
       </div>
-      <div class="flex">
+      <div class="flex max-lg:justify-center">
         <button
-          class="rounded-3xl px-8 py-4 text-gray-700 font-bold uppercase text-xs bg-custom-linear mr-10"
+          class="rounded-3xl px-8 py-4 max-lg:px-24 text-gray-700 font-bold uppercase lg:text-xs bg-custom-linear lg:mr-10"
         >
           Build Your World
         </button>
-        <img src="arrow.svg" alt="arrow" />
+        <img class="max-lg:hidden" src="arrow.svg" alt="arrow" />
       </div>
     </div>
     <img
-      class="rounded-tl-[7rem] rounded-tr-[7rem] rounded-br-[7rem] rounded-bl-[16rem] border-[1rem] border-black border-opacity-10"
+      class="rounded-tl-[7rem] rounded-tr-[7rem] rounded-br-[7rem] rounded-bl-[16rem] border-[1rem] border-black border-opacity-10 max-lg:mb-10"
       src="hero-main.png"
       alt="hero"
     />
