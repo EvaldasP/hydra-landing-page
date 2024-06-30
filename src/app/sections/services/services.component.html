@@ -10,11 +10,13 @@
     }
   </div>
 
-  <app-swiper-container [isCenteredNav]="true">
-    @for (service of availableServices; track service.name ) {
-    <swiper-slide class="flex items-center justify-center">
-      <app-service-card [service]="service"></app-service-card>
-    </swiper-slide>
-    }
-  </app-swiper-container>
+  <div class="lg:hidden">
+    <app-swiper-container [isCenteredNav]="true">
+      @for (service of availableServices; track service.name ) {
+      <swiper-slide class="flex items-center justify-center">
+        <app-service-card [service]="service"></app-service-card>
+      </swiper-slide>
+      }
+    </app-swiper-container>
+  </div>
 </div>

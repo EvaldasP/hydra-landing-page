@@ -1,8 +1,9 @@
 <div
-  class="lg:hidden flex flex-row justify-center"
+  class="flex flex-row justify-center"
   [ngClass]="isCenteredNav() ? 'items-center' : 'items-end'"
 >
   <div
+    *ngIf="!isHiddenNav()"
     class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
   >
     <button
@@ -24,6 +25,7 @@
   </swiper-container>
 
   <div
+    *ngIf="!isHiddenNav()"
     class="h-max rounded-full border-[0.5rem] border-black border-opacity-10"
   >
     <button

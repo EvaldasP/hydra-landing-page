@@ -19,6 +19,7 @@ import { SwiperContainer } from 'swiper/element';
 })
 export class SwiperContainerComponent {
   public isCenteredNav = input<boolean>(false);
+  public isHiddenNav = input<boolean>(false);
 
   private _swiperContainer =
     viewChild<ElementRef<SwiperContainer>>('swiperContainer');

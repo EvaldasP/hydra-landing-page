@@ -13,14 +13,16 @@
     }
   </div>
 
-  <app-swiper-container>
-    @for (process of processes; track process;let index = $index) {
-    <swiper-slide>
-      <app-process-card
-        [title]="process"
-        [cardNumber]="index + 1"
-      ></app-process-card
-    ></swiper-slide>
-    }
-  </app-swiper-container>
+  <div class="lg:hidden">
+    <app-swiper-container>
+      @for (process of processes; track process;let index = $index) {
+      <swiper-slide>
+        <app-process-card
+          [title]="process"
+          [cardNumber]="index + 1"
+        ></app-process-card
+      ></swiper-slide>
+      }
+    </app-swiper-container>
+  </div>
 </div>

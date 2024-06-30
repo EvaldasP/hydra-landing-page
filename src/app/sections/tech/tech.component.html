@@ -21,13 +21,16 @@
     <img [src]="company" [alt]="company" />
     }
   </div>
-  <app-swiper-container [isCenteredNav]="true">
-    @for (company of companies; track company) {
-    <swiper-slide>
-      <div class="flex items-center justify-between flex-wrap">
-        <img [src]="company" [alt]="company" class="h-[200px]" />
-      </div>
-    </swiper-slide>
-    }
-  </app-swiper-container>
+
+  <div class="lg:hidden">
+    <app-swiper-container [isCenteredNav]="true">
+      @for (company of companies; track company) {
+      <swiper-slide>
+        <div class="flex items-center justify-between flex-wrap">
+          <img [src]="company" [alt]="company" class="h-[200px]" />
+        </div>
+      </swiper-slide>
+      }
+    </app-swiper-container>
+  </div>
 </div>
