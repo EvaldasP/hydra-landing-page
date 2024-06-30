@@ -3,23 +3,47 @@
     <img src="hydraLogo.png" alt="hydraLogo" class="w-24 mr-3" />
     <img src="logoText.png" alt="logoText" class="h-12" />
   </div>
-  <div>
+  <div class="max-lg:hidden">
     @for (link of navLinks; track link ) {
     <a href="#" class="text-slate-50 px-3 text-xs font-bold uppercase">{{
       link
     }}</a>
     }
   </div>
-  <div>
+  <div class="max-lg:hidden">
     <button
-      class="border-2 rounded-full px-10 py-4 text-slate-50 mr-6 font-bold uppercase text-xs"
+      class="border-2 rounded-full px-10 md:px-5 py-4 text-slate-50 mr-6 font-bold uppercase text-xs"
     >
       Contact Us
     </button>
     <button
-      class="rounded-full px-10 py-5 text-gray-700 font-bold uppercase text-xs bg-custom-linear"
+      class="rounded-full px-10 md:px-5 py-5 text-gray-700 font-bold uppercase text-xs bg-custom-linear"
     >
       Join Hydra
     </button>
+  </div>
+
+  <div class="lg:hidden relative inline-block text-left">
+    <button (click)="toggleDropdown()">
+      <img src="hamburger.svg" alt="" />
+    </button>
+
+    <div
+      *ngIf="dropdownOpen"
+      class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-custom-linear ring-1 ring-black ring-opacity-5"
+      role="menu"
+      aria-orientation="vertical"
+      aria-labelledby="dropdownButton"
+    >
+      <div class="py-1" role="none">
+        @for (link of navLinks; track link ) {
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-slate-50 text-gray-700 font-bold"
+          >{{ link }}</a
+        >
+        }
+      </div>
+    </div>
   </div>
 </div>

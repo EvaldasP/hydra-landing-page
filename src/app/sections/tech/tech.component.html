@@ -14,7 +14,9 @@
       </button>
     </div>
   </div>
-  <div class="max-lg:hidden flex items-center justify-between flex-wrap">
+  <div
+    class="max-lg:hidden flex items-center justify-around xl:justify-between flex-wrap"
+  >
     @for (company of companies; track company) {
     <img [src]="company" [alt]="company" />
     }
