@@ -4,7 +4,9 @@
     [secondaryText]="'With Hydra?'"
   ></app-section-header>
 
-  <div class="max-lg:hidden flex justify-around flex-wrap">
+  <div
+    class="max-lg:hidden flex md:justify-around lg:justify-between flex-wrap"
+  >
     @for (service of availableServices; track service.name ) {
     <app-service-card [service]="service"></app-service-card>
     }
