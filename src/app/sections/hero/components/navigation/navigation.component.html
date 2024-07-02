@@ -5,9 +5,12 @@
   </div>
   <div class="max-lg:hidden">
     @for (link of navLinks; track link ) {
-    <a href="#" class="text-slate-50 px-3 text-xs font-bold uppercase">{{
-      link
-    }}</a>
+    <a
+      href="#"
+      class="text-slate-50 mx-3 pb-1 text-xs font-bold uppercase underline-from-left"
+      >{{ link }}</a
+    >
+
     }
   </div>
   <div class="max-lg:hidden">
@@ -39,7 +42,7 @@
         @for (link of navLinks; track link ) {
         <a
           href="#"
-          class="block px-4 py-2 text-sm text-slate-50 text-gray-700 font-bold"
+          class="block px-4 py-2 text-sm text-gray-700 font-bold underline-from-left"
           >{{ link }}</a
         >
         }

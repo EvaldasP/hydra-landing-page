@@ -1,0 +1,12 @@
+.underline-from-left {
+  @apply relative;
+}
+
+.underline-from-left::before {
+  @apply w-full h-1 origin-right transition-transform duration-300 scale-x-0 bg-[#C0B7E8] absolute left-0 bottom-0;
+  content: "";
+}
+
+.underline-from-left:hover::before {
+  @apply scale-x-100 origin-left;
+}

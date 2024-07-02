@@ -10,7 +10,7 @@
         <div class="w-[4px] bg-vertical-line"></div>
         <div class="flex flex-col px-16">
           @for (link of links; track link) {
-          <a href="" class="mb-2">{{ link }}</a>
+          <a href="#" class="mb-2 w-max underline-from-left">{{ link }}</a>
           }
         </div>
       </div>
@@ -18,7 +18,7 @@
       <div class="text-slate-50 flex font-bold uppercase">
         <div class="flex flex-col px-16">
           @for (doc of docs; track doc) {
-          <a href="" class="mb-2">{{ doc }}</a>
+          <a href="#" class="mb-2 w-max underline-from-left">{{ doc }}</a>
           }
         </div>
         <div class="w-[4px] bg-vertical-line"></div>
@@ -32,7 +32,7 @@
       >
       <div class="flex justify-between">
         @for (icon of icons; track icon) {
-        <a class="px-2" href="">
+        <a class="px-2" href="#">
           <img [src]="icon.icon" alt="" />
         </a>
         }
