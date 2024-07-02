@@ -1,4 +1,4 @@
-# <center>Hydra Landing Page
+<h1 align=center>Hydra Landing Page</h1>
 
 
 [<img src="public/readme.png">](https://github.com/EvaldasP)
