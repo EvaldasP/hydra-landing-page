@@ -27,10 +27,10 @@
 </div>
 
 <div
-  class="lg:hidden flex flex-row justify-center items-center bg-custom-radial rounded-full p-8"
+  class="lg:hidden flex flex-row justify-center items-center bg-custom-radial rounded-full py-4 max-sm:py-2"
 >
   <button
-    class="flex items-center flex-shrink-0"
+    class="flex items-center flex-shrink-0 mx-[-30px]"
     (click)="swiperContainer.slidePrev()"
   >
     <img src="contact-arrow.png" alt="" />
@@ -40,7 +40,11 @@
     <app-swiper-container #swiperContainer [isHiddenNav]="true">
       <swiper-slide>
         <div class="flex items-center justify-center p-4">
-          <img src="location-icon.svg" alt="location" />
+          <img
+            src="location-icon.svg"
+            alt="location"
+            class="mx-5 max-sm:hidden"
+          />
           <div class="text-slate-50">
             <h3 class="text-2xl">Pay Us a Visit</h3>
             <p class="text-sm">Union St, Seattle, WA 98101, United States</p>
@@ -49,7 +53,7 @@
       </swiper-slide>
       <swiper-slide>
         <div class="flex items-center justify-center p-4">
-          <img src="phone-call.svg" alt="call" class="mx-5" />
+          <img src="phone-call.svg" alt="call" class="mx-5 max-sm:hidden" />
           <div class="text-slate-50">
             <h3 class="text-2xl">Give Us a Call</h3>
             <p class="text-sm">(110) 1111-1010</p>
@@ -58,7 +62,7 @@
       </swiper-slide>
       <swiper-slide>
         <div class="flex items-center justify-center p-4">
-          <img src="mail.svg" alt="message" class="mx-5" />
+          <img src="mail.svg" alt="message" class="mx-5 max-sm:hidden" />
           <div class="text-slate-50">
             <h3 class="text-2xl">Send Us a Message</h3>
             <p class="text-sm">Contact&#64;HydraVTech.com</p>
@@ -69,7 +73,7 @@
   </div>
 
   <button
-    class="flex items-center flex-shrink-0"
+    class="flex items-center flex-shrink-0 mx-[-30px]"
     (click)="swiperContainer.slideNext()"
   >
     <img src="contact-arrow.png" class="rotate-180" alt="" />
