@@ -4,7 +4,11 @@
     [secondaryText]="'With Hydra VR?'"
   ></app-section-header>
 
-  <div class="flex justify-between max-lg:hidden">
+  <div
+    data-aos="fade-up"
+    data-aos-duration="3000"
+    class="flex justify-between max-lg:hidden"
+  >
     @for (process of processes; track process;let index = $index) {
     <app-process-card
       [title]="process"
