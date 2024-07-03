@@ -6,3 +6,11 @@
   background-position-y: top, 7%;
   background-color: #343045;
 }
+
+.loader {
+  background-color: #343045;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

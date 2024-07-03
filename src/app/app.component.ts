@@ -7,6 +7,8 @@ import { TechComponent } from './sections/tech/tech.component';
 import { ProcessComponent } from './sections/process/process.component';
 import { FormComponent } from './sections/form/form.component';
 import { FooterComponent } from './sections/footer/footer.component';
+import { delay, of } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -20,11 +22,12 @@ import { FooterComponent } from './sections/footer/footer.component';
     ProcessComponent,
     FormComponent,
     FooterComponent,
+    CommonModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppComponent {
-  title = 'hydra-landing-page';
+  public readonly isLoaded$ = of(true).pipe(delay(3000));
 }

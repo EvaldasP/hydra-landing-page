@@ -1,4 +1,13 @@
-<div class="main-wrapper px-24 max-sm:px-6 max-lg:px-12 pt-12">
+<ng-template #loader>
+  <div class="loader">
+    <img src="hydraLogo.png" alt="" class="animate-ping h-[100px]" />
+  </div>
+</ng-template>
+
+<div
+  *ngIf="isLoaded$ | async; else loader"
+  class="main-wrapper px-24 max-sm:px-6 max-lg:px-12 pt-12"
+>
   <app-hero></app-hero>
   <div class="mt-24">
     <app-introduction></app-introduction>
@@ -15,7 +24,6 @@
   <div class="mt-28">
     <app-form></app-form>
   </div>
-
   <div class="mt-32 pb-10">
     <app-footer></app-footer>
   </div>
