@@ -3,7 +3,7 @@
     <img src="hydraLogo.png" alt="hydraLogo" class="w-24 mr-3" />
     <img src="logoText.png" alt="logoText" class="h-12" />
   </div>
-  <div class="max-lg:hidden">
+  <div class="max-xl:hidden">
     @for (link of navLinks; track link ) {
     <a
       href="#"
@@ -13,7 +13,7 @@
 
     }
   </div>
-  <div class="max-lg:hidden">
+  <div class="max-xl:hidden">
     <button
       class="border-2 rounded-full px-5 py-4 text-slate-50 mr-6 font-bold uppercase text-xs"
     >
@@ -26,14 +26,14 @@
     </button>
   </div>
 
-  <div class="lg:hidden relative inline-block text-left">
+  <div class="xl:hidden relative inline-block text-left">
     <button (click)="toggleDropdown()">
       <img src="hamburger.svg" alt="" />
     </button>
 
     <div
       *ngIf="dropdownOpen"
-      class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-custom-linear ring-1 ring-black ring-opacity-5"
+      class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-custom-linear ring-1 ring-black ring-opacity-5 z-10"
       role="menu"
       aria-orientation="vertical"
       aria-labelledby="dropdownButton"
