@@ -2,7 +2,7 @@
 
 
 [<img src="public/readme.png">](https://github.com/EvaldasP)
-<p align=center>Transforming a design into a fully functional and responsive webpage using TailwindCSS to learn the framework and apply a few new Angular features like signal inputs, queries, and built-in control flow</p>
+<p align=center>Transforming a design into a responsive webpage using TailwindCSS to learn the framework and apply a few new Angular features like signal inputs, queries, and built-in control flow</p>
 
 - [Angular](https://angular.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
