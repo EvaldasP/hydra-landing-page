@@ -1,6 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { ProcessCardComponent } from './components/process-card/process-card.component';
-import { CommonModule } from '@angular/common';
 import { SwiperContainerComponent } from '../../shared/components/swiper-container/swiper-container.component';
 import { SectionHeaderComponent } from '../../shared/components/section-header/section-header.component';
 
@@ -9,7 +8,6 @@ import { SectionHeaderComponent } from '../../shared/components/section-header/s
   standalone: true,
   imports: [
     ProcessCardComponent,
-    CommonModule,
     SwiperContainerComponent,
     SectionHeaderComponent,
   ],

@@ -2,8 +2,8 @@
   class="flex flex-row justify-center"
   [ngClass]="isCenteredNav() ? 'items-center' : 'items-end'"
 >
+  @if(!isHiddenNav()){
   <div
-    *ngIf="!isHiddenNav()"
     class="h-max rounded-full border-[0.5rem] border-black border-opacity-10 max-sm:mx-[-30px] z-10"
   >
     <button
@@ -13,7 +13,7 @@
       <img class="h-[10px]" src="chevron.png" alt="" />
     </button>
   </div>
-
+  }
   <swiper-container
     #swiperContainer
     slides-per-view="1"
@@ -24,8 +24,8 @@
     <ng-content></ng-content>
   </swiper-container>
 
+  @if(!isHiddenNav()){
   <div
-    *ngIf="!isHiddenNav()"
     class="h-max rounded-full border-[0.5rem] border-black border-opacity-10 max-sm:mx-[-30px] z-10"
   >
     <button
@@ -35,4 +35,5 @@
       <img class="h-[10px]" src="chevron.png" alt="" />
     </button>
   </div>
+  }
 </div>

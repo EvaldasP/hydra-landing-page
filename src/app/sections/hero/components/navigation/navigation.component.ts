@@ -1,10 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })

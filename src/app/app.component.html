@@ -1,13 +1,5 @@
-<ng-template #loader>
-  <div class="loader">
-    <img src="hydraLogo.png" alt="" class="animate-ping h-[100px]" />
-  </div>
-</ng-template>
-
-<div
-  *ngIf="isLoaded$ | async; else loader"
-  class="main-wrapper px-36 max-sm:px-6 max-lg:px-12 pt-12"
->
+@if(isLoaded$ | async){
+<div class="main-wrapper px-36 max-sm:px-6 max-lg:px-12 pt-12">
   <app-hero></app-hero>
   <div class="mt-24">
     <app-introduction></app-introduction>
@@ -28,3 +20,8 @@
     <app-footer></app-footer>
   </div>
 </div>
+} @else {
+<div class="loader">
+  <img src="hydraLogo.png" alt="" class="animate-ping h-[100px]" />
+</div>
+}
