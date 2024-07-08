@@ -1,6 +1,9 @@
 @if(isLoaded$ | async){
 <div class="main-wrapper px-36 max-sm:px-6 max-lg:px-12 pt-12">
+  @defer {
   <app-hero></app-hero>
+
+  }
   <div class="mt-24">
     <app-introduction></app-introduction>
   </div>
