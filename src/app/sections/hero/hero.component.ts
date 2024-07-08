@@ -6,7 +6,7 @@ import { NgOptimizedImage } from '@angular/common';
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [NavigationComponent, HeroContactsComponent, NgOptimizedImage],
+  imports: [NavigationComponent, HeroContactsComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
