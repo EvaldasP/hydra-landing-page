@@ -6,11 +6,7 @@
 
   <div class="max-lg:hidden flex justify-around flex-wrap">
     @for (service of availableServices; track service.name ) {
-    <app-service-card
-      data-aos="flip-right"
-      data-aos-duration="3000"
-      [service]="service"
-    ></app-service-card>
+    <app-service-card [service]="service"></app-service-card>
     }
   </div>
 

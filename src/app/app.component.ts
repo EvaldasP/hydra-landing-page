@@ -38,6 +38,6 @@ export class AppComponent implements OnInit {
   public readonly isLoaded$ = of(true).pipe(delay(3000));
 
   public ngOnInit(): void {
-    AOS.init();
+    AOS.init({ once: true });
   }
 }
